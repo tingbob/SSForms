@@ -3,7 +3,6 @@ package it.starksoftware.ssform.helper;
 import android.app.Activity;
 import android.support.v4.app.FragmentManager;
 import android.content.Context;
-import android.support.v7.appcompat.BuildConfig;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -228,13 +227,6 @@ public class FormBuildHelper {
         }
 
         return validatedItems;
-    }
-
-    public static String getCurrentVersion()
-    {
-        int versionCode = BuildConfig.VERSION_CODE;
-        String versionName = BuildConfig.VERSION_NAME;
-        return String.format("%s.%s", versionName, versionCode);
     }
 
     public void addFormElements(List<FormObject> formElements) {
